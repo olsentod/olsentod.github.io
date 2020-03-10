@@ -41,7 +41,7 @@ Darker : a36848*/
 @media (max-width: 768px) {
   nav {
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   nav #mobile-menu {
     display: -webkit-box;
