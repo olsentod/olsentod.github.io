@@ -1,6 +1,4 @@
 [submodule "AnimationTest"]
 	path = AnimationTest
 	url = https://github.com/olsentod/AnimationTest.git
-[submodule "TodOList"]
-	path = TodOList
-	url = https://github.com/olsentod/TodOList.git
+	
