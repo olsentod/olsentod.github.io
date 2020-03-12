@@ -1,4 +1,42 @@
-@import './reset/reset';
-@import './grid/grid';
-@import './colors/colors';
-@import './layout/layout';
+@import './reset/_reset';
+@import './grid/_grid';
+@import './colors/_colors';
+@import './layout/_layout';
+
+body{
+    background-color: $light;
+}
+
+a{
+    color: $dark
+}
+
+.bg-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+    height: 600px;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media{
+    font-size: 3rem;
+
+    >a{
+        padding: 0 10px;
+        color: $light;
+
+
+        &:hover{
+            color: $mid;
+        }
+    }
+}

@@ -4,10 +4,12 @@
     The second part is the reset I added to implement font sizes.
 
 */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html,
 body,
 div,
@@ -142,16 +144,15 @@ table {
 /** Fonts and Other initializations **/
 html {
   font-size: 14px;
+  // min-height: 100%;
+  // overflow: hidden;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  // min-height: 100%;
+  // overflow: hidden;
+  flex-direction: column;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -204,4 +205,3 @@ a {
 strong {
   font-weight: bold;
 }
-/*# sourceMappingURL=reset.css.map */
