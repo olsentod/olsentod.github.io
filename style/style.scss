@@ -1,30 +1,23 @@
-@import './reset/_reset';
-@import './grid/_grid';
-@import './colors/_colors';
-@import './layout/_layout';
+@import './_reset';
+@import './_grid';
+@import './utilities';
+@import './_colors';
+@import './_layout';
 
 body{
     background-color: $light;
 }
 
 a{
-    color: $dark
+    color: $dark;
+
+    &:hover{
+        opacity: 0.7;
+    }
 }
 
-.bg-image{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-transform: translate3d(0,0,0);
-    -webkit-backface-visibility: hidden;
-    transform: translate3d(0,0,0);
-    backface-visibility: hidden;
-    height: 600px;
-}
-
-.flex-center{
-    justify-content: center;
-    align-items: center;
+main > .row{
+    min-height: 100vh;
 }
 
 .social-media{

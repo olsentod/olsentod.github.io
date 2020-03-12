@@ -1,0 +1,36 @@
+$paddings: (1, 2, 3, 4, 5);
+
+@each $pad in $paddings {
+    .p-#{$pad} {
+        padding: #{$pad}rem;
+    }
+    .py-#{$pad} {
+        padding-top: #{$pad}rem;
+        padding-bottom: #{$pad}rem;
+
+    }
+    .px-#{$pad} {
+        padding-left: #{$pad}rem;
+        padding-right: #{$pad}rem;
+    }
+}
+
+
+.bg-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center{
+    text-align: center;
+}

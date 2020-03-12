@@ -21,25 +21,51 @@
             <div id="mobile-menu">≡</div>
 
             <ul class="navbar">
-                <li><a href="/">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a data-target="home">Home</a></li>
+                <li><a data-target="about">About</a></li>
+                <li><a data-target="projects">Projects</a></li>
                 <div id="mobile-menu-close">✕</div>
 
             </ul>
         </nav>
     </header>
     <main>
-        <div class="row container bg-image" style="background-image: url('./imgs/hero.jpg'); width: 100%;">
+        <div id="home" class="row bg-image" style="background-image: url('./imgs/hero.jpg');"></div>
+
+        <div id="about" class="row container flex-center py-3 bg-light text-dark">
+            <div class="col text-center">
+                <h1>About me</h1>
+                <p>What about me?</p>
+            </div>
+        </div>
+
+        <div id="projects" class="row container flex-center py-3 bg-mid text-dark">
+            <div class="col text-center">
+                <h1>Projects</h1>
+                <div class="row">
+                    <div class="col px-2">
+                        <h3>TodO List</h3>
+                        <p>This was one of my first full projects that I did on my own. It is a full todo app built in
+                            vanilla JS. I used the ES6 classes and my own custom CSS.</p>
+                    </div>
+                    <div class="col px-2">
+                        <h3>Animation Test</h3>
+                        <p>I've always been interested in game development, mostly due to my love for games. For fun I
+                            built a JS library (not very extensive) for animations in HTML5 canvas.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>
-    <footer id="footer" class="row container">
+    <footer id="footer" class="row container py-4">
         <div class="col flex-center">
             <h2>Follow Me</h2>
             <div class="social-media">
-                <a href="https://www.instagram.com/olsen_tod/" target="_blank"><i class="fab fa-instagram-square"></i></a>
-                <a href="https://www.linkedin.com/in/tod-olsen-b31033149/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/olsen_tod/" target="_blank"><i
+                        class="fab fa-instagram-square"></i></a>
+                <a href="https://www.linkedin.com/in/tod-olsen-b31033149/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/olsentod" target="_blank"><i class="fab fa-github-square"></i></a>
             </div>
         </div>
