@@ -143,15 +143,11 @@ table {
 
 /** Fonts and Other initializations **/
 html {
-  font-size: 14px;
-  // min-height: 100%;
-  // overflow: hidden;
+  font-size: 16px;
 }
 
 body {
   display: flex;
-  // min-height: 100%;
-  // overflow: hidden;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
 }

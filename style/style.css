@@ -141,7 +141,7 @@ table {
 
 /** Fonts and Other initializations **/
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body {
@@ -222,17 +222,8 @@ strong {
   padding-right: calc(50% - 600px);
 }
 
-.row .col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.row .row {
+  width: 100%;
 }
 
 .row .col-1 {
@@ -367,6 +358,20 @@ strong {
   width: calc((12/12)*100%);
 }
 
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+}
+
 @media (max-width: 768px) {
   .row:not(.no-wrap) .col {
     -webkit-box-flex: initial;
@@ -410,6 +415,46 @@ strong {
   .row:not(.no-wrap) .col-12 {
     width: 100%;
   }
+}
+
+.text-light {
+  color: #D8E8E8;
+}
+
+.text-mid {
+  color: #A8D0DA;
+}
+
+.text-blue {
+  color: #406D96;
+}
+
+.text-dark {
+  color: #2F3A56;
+}
+
+.text-red {
+  color: #E2474B;
+}
+
+.bg-light {
+  background-color: #D8E8E8;
+}
+
+.bg-mid {
+  background-color: #A8D0DA;
+}
+
+.bg-blue {
+  background-color: #406D96;
+}
+
+.bg-dark {
+  background-color: #2F3A56;
+}
+
+.bg-red {
+  background-color: #E2474B;
 }
 
 .p-1 {
@@ -482,6 +527,16 @@ strong {
   padding-right: 5rem;
 }
 
+.btn {
+  padding: 12px 35px;
+  background-color: #2F3A56;
+  color: #D8E8E8;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
 .bg-image {
   background-size: cover;
   background-repeat: no-repeat;
@@ -501,55 +556,31 @@ strong {
           align-items: center;
 }
 
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
 
-.text-light {
-  color: #D8E8E8;
-}
-
-.text-mid {
-  color: #A8D0DA;
-}
-
-.text-blue {
-  color: #406D96;
-}
-
-.text-dark {
-  color: #2F3A56;
-}
-
-.text-red {
-  color: #E2474B;
-}
-
-.bg-light {
-  background-color: #D8E8E8;
-}
-
-.bg-mid {
-  background-color: #A8D0DA;
-}
-
-.bg-blue {
-  background-color: #406D96;
-}
-
-.bg-dark {
-  background-color: #2F3A56;
-}
-
-.bg-red {
-  background-color: #E2474B;
+.project-img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
 }
 
 header {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  margin-bottom: -68px;
+  margin-bottom: -70px;
   z-index: 1;
   -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
@@ -577,6 +608,7 @@ header #logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 10px;
 }
 
 header nav #mobile-menu,
@@ -644,6 +676,10 @@ main {
           flex-grow: 1;
 }
 
+main h2 {
+  margin-bottom: 3rem;
+}
+
 #footer {
   background-color: #2F3A56;
   color: #D8E8E8;
@@ -653,8 +689,11 @@ main {
 }
 
 @media (max-width: 768px) {
-  header {
-    position: relative;
+  header.sticky nav ul.navbar {
+    color: #2F3A56;
+  }
+  header.sticky nav ul.navbar li a {
+    color: #2F3A56;
   }
   header nav {
     overflow: hidden;
@@ -667,7 +706,9 @@ main {
   header nav ul.navbar {
     background-color: white;
     width: 100%;
-    position: absolute;
+    height: 100%;
+    position: fixed;
+    top: 0;
     right: -100%;
     -webkit-transition: right 200ms ease-in-out;
     transition: right 200ms ease-in-out;
@@ -675,8 +716,20 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
-    padding-top: 60px;
+  }
+  header nav ul.navbar li a,
+  header nav ul.navbar li a:last-of-type {
+    padding: 40px 30px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: center;
+    border: 0;
+    font-size: 1.75rem;
   }
   header nav.open {
     overflow: initial;

@@ -15,7 +15,7 @@
 <body>
     <header class="row container no-wrap">
         <div id="logo" class="col">
-            <h1 style="margin: 0">TO</h1>
+            <h1 style="margin: 0">TO.</h1>
         </div>
         <nav class="col-9">
             <div id="mobile-menu">≡</div>
@@ -30,28 +30,66 @@
         </nav>
     </header>
     <main>
-        <div id="home" class="row bg-image" style="background-image: url('./imgs/hero.jpg');"></div>
+        <div id="home" class="row bg-image container flex-center" style="background-image: url('./imgs/hero.jpg');">
+            <h1>Don't be too boring.</h1>
+        </div>
 
-        <div id="about" class="row container flex-center py-3 bg-light text-dark">
-            <div class="col text-center">
-                <h1>About me</h1>
-                <p>What about me?</p>
+        <div id="about" class="row container flex-center bg-light text-dark">
+            <div class="col text-left">
+                <div class="row">
+                    <div class="col-3"><img src="imgs/IMG_9353.jpg" alt="Tod by big tree"
+                            style="max-width: 400px; width:100%"></div>
+                    <div class="col px-4">
+                        <h2>About me</h2>
+                        <p>I grew up in the small town of Mount Pleasant, Utah. My love for computers started during my
+                            childhood when I would play "Putt-Putt Goes to the Moon". The virtual world was intriguing to
+                            me. Other than working with computers, I enjoy hiking, rock climbing,
+                            music and spending time with my close friends.</p>
+                        <p>
+                            I have worked in customer support and website design for Etrafficers, Inc. During my time
+                            at
+                            Etrafficers, I developed, deployed and maintained over 30 mortgage website templates. <a
+                                href="https://www.etrafficers.com/websites/mortgage-website-templates/" target="_blank"
+                                style="text-decoration: underline;">See some examples</a>
+                        </p>
+                        <p>
+                            I am a student at Utah Valley University studying Computer Science with an emphasis in
+                            Full-Stack Development. I am in the Honors Program and currently hold a 3.9 GPA. I'm on track to graduate May 2021.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <div id="projects" class="row container flex-center py-3 bg-mid text-dark">
+        <div id="projects" class="row container flex-center bg-mid text-dark">
             <div class="col text-center">
-                <h1>Projects</h1>
+                <h2>Projects</h2>
                 <div class="row">
-                    <div class="col px-2">
+                    <div class="col px-2 align-items-center">
+                        <a href="/TodOList/" target="_blank"><img class="project-img" src="imgs/todOList.png"
+                                alt="TodO List Example" /></a>
                         <h3>TodO List</h3>
                         <p>This was one of my first full projects that I did on my own. It is a full todo app built in
                             vanilla JS. I used the ES6 classes and my own custom CSS.</p>
+                        <div class="row">
+                            <div class="col"><a class="btn" href="https://github.com/olsentod/TodOList"
+                                    target="_blank">See Code</a></div>
+                            <div class="col"><a class="btn" href="/TodOList/" target="_blank">See Live Example</a></div>
+                        </div>
                     </div>
-                    <div class="col px-2">
+                    <div class="col px-2 align-items-center">
+                        <a href="/AnimationTest/" target="_blank"><img class="project-img" src="imgs/animationTest.png"
+                                alt="TodO List Example" style="max-width: 300px;" /></a>
                         <h3>Animation Test</h3>
-                        <p>I've always been interested in game development, mostly due to my love for games. For fun I
-                            built a JS library (not very extensive) for animations in HTML5 canvas.</p>
+                        <p>I've always been interested in game development, mostly due to my love for games. I
+                            built a small JS library for creating animations in HTML5 canvas.</p>
+                        <div class="row">
+                            <div class="col"><a class="btn" href="https://github.com/olsentod/AnimationTest"
+                                    target="_blank">See Code</a></div>
+                            <div class="col"><a class="btn" href="/AnimationTest/" target="_blank">See Live Example</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

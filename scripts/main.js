@@ -1,10 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('mobile-menu').addEventListener('click', function () {
-        document.querySelector('nav').classList.toggle('open');
-    });
-    document.getElementById('mobile-menu-close').addEventListener('click', function () {
-        document.querySelector('nav').classList.toggle('open');
-    });
+    document.getElementById('mobile-menu').addEventListener('click', toggleMobileNav);
+    document.getElementById('mobile-menu-close').addEventListener('click', toggleMobileNav);
 
     // Sticky Header
     window.onscroll = function () {
@@ -31,10 +27,15 @@ document.addEventListener('DOMContentLoaded', function () {
     for(let link of links) link.addEventListener('click', scrollTo);
 
     function scrollTo(e) {
+        toggleMobileNav();
         let element = document.getElementById(e.target.dataset.target);
         var topOfElement;
         if(element.offsetTop == 0) topOfElement = element.offsetTop;
         else topOfElement = element.offsetTop - header.clientHeight;
         window.scroll({ top: topOfElement, behavior: "smooth" });
+    }
+
+    function toggleMobileNav(){
+        document.querySelector('nav').classList.toggle('open');
     }
 });

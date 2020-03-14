@@ -15,6 +15,16 @@ $paddings: (1, 2, 3, 4, 5);
     }
 }
 
+.btn{
+    padding: 12px 35px;
+    background-color: $dark;
+    color: $light;
+
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
 
 .bg-image{
     background-size: cover;
@@ -31,6 +41,20 @@ $paddings: (1, 2, 3, 4, 5);
     align-items: center;
 }
 
+.align-items-center{
+    align-items: center;
+}
+
+.text-left{
+    text-align: left;
+}
 .text-center{
     text-align: center;
+}
+
+
+.project-img{
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
 }
