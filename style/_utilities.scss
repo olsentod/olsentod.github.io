@@ -1,59 +1,91 @@
-$paddings: (1, 2, 3, 4, 5);
+$sizings: (1, 2, 3, 4, 5);
 
-@each $pad in $paddings {
-    .p-#{$pad} {
-        padding: #{$pad}rem;
+@each $size in $sizings {
+    .p-#{$size} {
+        padding: #{$size}rem;
     }
-    .py-#{$pad} {
-        padding-top: #{$pad}rem;
-        padding-bottom: #{$pad}rem;
+
+    .py-#{$size} {
+        padding-top: #{$size}rem;
+        padding-bottom: #{$size}rem;
 
     }
-    .px-#{$pad} {
-        padding-left: #{$pad}rem;
-        padding-right: #{$pad}rem;
+
+    .px-#{$size} {
+        padding-left: #{$size}rem;
+        padding-right: #{$size}rem;
+    }
+
+    .m-#{$size} {
+        margin: #{$size}rem;
+    }
+
+    .my-#{$size} {
+        margin-top: #{$size}rem;
+        margin-bottom: #{$size}rem;
+
+    }
+
+    .mx-#{$size} {
+        margin-left: #{$size}rem;
+        margin-right: #{$size}rem;
+    }
+
+    .mb-#{$size} {
+        margin-bottom: #{$size}rem;
+
     }
 }
 
-.btn{
-    padding: 12px 35px;
-    background-color: $dark;
-    color: $light;
 
-    &:hover{
-        opacity: 0.7;
-    }
-}
-
-
-.bg-image{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-transform: translate3d(0,0,0);
-    -webkit-backface-visibility: hidden;
-    transform: translate3d(0,0,0);
-    backface-visibility: hidden;
-}
-
-.flex-center{
+.btn-container {
     justify-content: center;
     align-items: center;
 }
 
-.align-items-center{
+.btn {
+    padding: 12px 35px;
+    background-color: $dark;
+    color: $light;
+    max-width: 200px;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+}
+
+.flex-center {
+    justify-content: center;
     align-items: center;
 }
 
-.text-left{
+.align-items-center {
+    align-items: center;
+}
+
+.text-left {
     text-align: left;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
 
+.b-shadow {
+    box-shadow: 1px 4px 9px 0px #2f3a56;
+}
 
-.project-img{
+.project-img {
     width: 100%;
     max-width: 300px;
     margin-bottom: 20px;
