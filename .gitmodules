@@ -5,6 +5,3 @@
 [submodule "TodOList"]
 	path = TodOList
 	url = https://github.com/olsentod/TodOList.git
-[submodule "minesweeper"]
-	path = minesweeper
-	url = git@github.com:olsentod/minesweeper.git
