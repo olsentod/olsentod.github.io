@@ -8,3 +8,6 @@
 [submodule "minesweeper"]
 	path = minesweeper
 	url = https://github.com/olsentod/minesweeper.git
+[submodule "sudoku"]
+	path = sudoku
+	url = git@github.com:olsentod/warts-the-number.git
